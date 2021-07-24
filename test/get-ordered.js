@@ -1,0 +1,68 @@
+const { expect } = require("chai");
+const { getOrderedFromStock } = require("../modules/get-ordered");
+const { stock } = require("../data/stock.json")
+
+describe("Get Ordered List Test", function() {
+  describe("Test with starting by 'a'", function() {
+    it("Return the correct ordered list for input 'a'", function() {
+      var orderedList   = getOrderedFromStock('a', stock);
+      expect(orderedList).to.deep.equal([
+          "abacate",
+          "alecrim",
+          "alface",
+          "abrico"
+      ]);
+    });
+  });
+
+  describe("Test with starting by 'ab'", function() {
+    it("Return the correct ordered list for input 'ab'", function() {
+      var orderedList   = getOrderedFromStock('ab', stock);
+      expect(orderedList).to.deep.equal([
+          "abacate",
+          "abrico"
+      ]);
+    });
+  });
+
+  describe("Test with starting by 'aba'", function() {
+    it("Return the correct ordered list for input 'aba'", function() {
+      var orderedList   = getOrderedFromStock('aba', stock);
+      expect(orderedList).to.deep.equal([
+          "abacate",
+      ]);
+    });
+  });
+
+  describe("Test with starting by 't'", function() {
+    it("Return the correct ordered list for input 't'", function() {
+      var orderedList   = getOrderedFromStock('t', stock);
+      expect(orderedList).to.deep.equal([
+          "talharim",
+          "tapioca",
+          "tomate",
+          "tomilho"
+      ]);
+    });
+  });
+
+  describe("Test with starting by 'to'", function() {
+    it("Return the correct ordered list for input 'to'", function() {
+      var orderedList   = getOrderedFromStock('to', stock);
+      expect(orderedList).to.deep.equal([
+          "tomate",
+          "tomilho"
+      ]);
+    });
+  });
+
+  describe("Test with starting by 'tom'", function() {
+    it("Return the correct ordered list for input 'tom'", function() {
+      var orderedList   = getOrderedFromStock('tom', stock);
+      expect(orderedList).to.deep.equal([
+          "tomate",
+          "tomilho"
+      ]);
+    });
+  });
+});
