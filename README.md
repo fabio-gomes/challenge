@@ -4,7 +4,7 @@ A vendinha da esquina está construindo um site para poder vender seus produtos 
 
 - A implementação deverá ser feita no prazo de **30 minutos**;
 - Os elementos devem ser retornados em ordem alfabética;
-- O código do frontend responsável por preencher o componte da interface gráfica com os produtos disponíveis em estoque irá chamar o backend a partir do primeiro caracter digitado;
+- O código do frontend, responsável por preencher o componte da interface gráfica com os produtos disponíveis em estoque, irá chamar o backend a partir do primeiro caracter digitado;
 
 <br>
 
