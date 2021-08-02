@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    border: 2px dashed #f69c55;
+    background-color: brown;
+}
+
+.header-text {
+    display: inline-block;
+    line-height: normal;
+    color: white;
+    font-size: 24px;
+}
+
+.shopping-area {
+    display: block;
+    margin: 80px;
+}
+
+.shopping-area-input {
+    width: 150px;
+}
+
+.shopping-area-select {
+    width: 150px;
+}

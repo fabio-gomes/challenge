@@ -1,6 +1,6 @@
 # Descrição do desafio
 
-A vendinha da esquina está construindo um site para poder vender seus produtos agora também pela internet. Todos os dias, o dono da vendinha atualiza os produtos disponíveis em estoque para que somente os produtos disponíveis em estoque sejam selecionados pelos seus clientes. Os clientes poderão escolher os produtos que desejam comprar através de um componente na interface gráfica do site da vendinha. Esse componente tem seu conteúdo preenchido com os valores retornados do backend. O código responsável por obter esses valores no backend é a função `getOrderedFromStock` que está localizada no arquivo `modules/get-ordered.js`. O candidato deve implementar o código da função `getOrderedFromStock` seguindo as seguintes premissas:
+A vendinha da esquina está construindo um site para poder vender seus produtos agora também pela internet. Os clientes poderão escolher os produtos que desejam comprar através de um componente HTML `select` na interface gráfica do site da vendinha. Esse componente tem seu conteúdo preenchido após o usuário digitar o nome do produto desejado em um componente HTML `input` também presente na interface gráfica. Os valores do componente `select` devem usar os valores retornados do backend. O candidato deve escrever o código Java Script responsável por obter os valores do backend e preecher o componente `select` e também o código responsável por obter esses valores no backend. O arquivo `server/public/app.js` é o local onde o candidato deve colocar o código de frontend e a função `getOrderedFromStock`, que está localizada no arquivo `server/modules/get-ordered.js`, é o local reservado para o código de backend. O candidato deve implementar o código seguindo as seguintes premissas:
 
 - A implementação deverá ser feita no prazo de **30 minutos**;
 - Os elementos devem ser retornados em ordem alfabética;
@@ -39,7 +39,7 @@ A vendinha da esquina está construindo um site para poder vender seus produtos 
 
 ## Execução 
 
-### O candidato poderá adicionar logs no código e verificar a saída executando `npm start <entrada de teste>`
+### O candidato poderá verificar o funcionamneto do app executando `npm start` e acessando no browser `http://localhost:3000`
 
 
 <br>
