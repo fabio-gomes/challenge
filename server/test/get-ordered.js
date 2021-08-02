@@ -1,6 +1,6 @@
 const { expect } = require("chai");
 const { getOrderedFromStock } = require("../modules/get-ordered");
-const { stock } = require("../data/stock.json")
+const stock = require("../data/stock.json")
 
 describe("Get Ordered List Test", function() {
   describe("Test with starting by 'a'", function() {
@@ -8,9 +8,10 @@ describe("Get Ordered List Test", function() {
       var orderedList   = getOrderedFromStock('a', stock);
       expect(orderedList).to.deep.equal([
           "abacate",
+          "abrico",
           "alecrim",
           "alface",
-          "abrico"
+          "alho"
       ]);
     });
   });
@@ -40,6 +41,7 @@ describe("Get Ordered List Test", function() {
       expect(orderedList).to.deep.equal([
           "talharim",
           "tapioca",
+          "tofu",
           "tomate",
           "tomilho"
       ]);
@@ -50,6 +52,7 @@ describe("Get Ordered List Test", function() {
     it("Return the correct ordered list for input 'to'", function() {
       var orderedList   = getOrderedFromStock('to', stock);
       expect(orderedList).to.deep.equal([
+          "tofu",
           "tomate",
           "tomilho"
       ]);
