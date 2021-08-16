@@ -70,18 +70,8 @@ describe("Get Ordered List Test", function () {
     });
   });
 
-  describe("Test with starting by 'tom' (case sentitivity)", function () {
-    it("Return the correct ordered list for input 'tom'", function () {
-      var orderedList = getOrderedFromStock('tom', stock);
-      expect(orderedList).to.deep.equal([
-        "tomate",
-        "tomilho"
-      ]);
-    });
-  });
-
-  describe("Test with starting by 'tom' (case sentitivity)", function () {
-    it("Return the correct ordered list for input 'tom'", function () {
+  describe("Test with starting by 'to' (case sentitivity)", function () {
+    it("Return the correct ordered list for input 'tom' minding case sensitivity", function () {
       var orderedList = getOrderedFromStock('to', stockCaseSensitive);
       expect(orderedList).to.deep.equal([
         "tofu",
@@ -91,8 +81,8 @@ describe("Get Ordered List Test", function () {
     });
   });
 
-  describe("Test with starting by 'a'", function () {
-    it("Return the correct ordered list for input 'a' (case sensitivity)", function () {
+  describe("Test with starting by 'a' (case sensitivity)", function () {
+    it("Return the correct ordered list for input 'a' minding case sensitivity", function () {
       var orderedList = getOrderedFromStock('a', stockCaseSensitive);
       expect(orderedList).to.deep.equal([
         "abacate",
